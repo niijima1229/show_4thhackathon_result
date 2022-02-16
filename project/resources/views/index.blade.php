@@ -22,6 +22,9 @@
                         未発表
                     @endif
                 </p>
+                <p class="card-text">
+                    登録スコア数：{{ $team->record() }}
+                </p>
                 <a href="{{ route('show_result', $team->id) }}" class="btn btn-primary">発表ページへ</a>
                 <a href="{{ route('score_create', $team->id) }}" class="btn btn-primary">得点登録ページへ</a>
             </div>

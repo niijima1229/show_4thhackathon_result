@@ -11,4 +11,9 @@ class Team extends Model
     {
         return Score::where('team_id', $this->id)->sum('score');
     }
+
+    public function record()
+    {
+        return Score::where('team_id', $this->id)->count();
+    }
 }
