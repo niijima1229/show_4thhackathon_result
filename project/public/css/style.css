@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+body {
+  background-color: #000;
+}
+
+.score-board-wrap {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.total-score-board {
+  border: 5px solid #ffce08;
+  margin: 0 300px;
+  display: none;
+}
+
+.score-board {
+  border: 5px solid #ffce08;
+  width: 18%;
+  display: none;
+}
+
+.is_show {
+  display: block;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-team-name {
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: 5px solid #ffce08;
+}
+
+.team {
+  font-size: 50px;
+  border-bottom: 5px solid #ffce08;
+}
+
+.judge_name {
+  font-size: 30px;
+  border-bottom: 5px solid #ffce08;
+}
+
+.team-total-score {
+  font-size: 100px;
+  margin: 20px 0;
+}
+
+.text-gold {
+  background-image: linear-gradient(0deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.team-wrapper {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+}
+
+.score {
+  opacity: 0;
+  margin-top: 20rem;
+  font-size: 100px;
+  text-align: center;
+  line-height: 0.95em;
+  font-weight: bold;
+  color: transparent;
+  background: repeating-linear-gradient(0deg, #b67b03 0.1em, #daaf08 0.2em, #fee9a0 0.3em, #daaf08 0.4em, #b67b03 0.5em);
+  -webkit-background-clip: text;
+  border: solid gold 2px;
+  -o-border-image: linear-gradient(45deg, #b67b03 0%, #daaf08 45%, #fee9a0 70%, #daaf08 85%, #b67b03 90% 100%);
+  border-image: linear-gradient(45deg, #b67b03 0%, #daaf08 45%, #fee9a0 70%, #daaf08 85%, #b67b03 90% 100%);
+  border-image-slice: 1;
+}
+
+.font-btn {
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+.outer {
+  position: relative;
+  margin-top: 10rem;
+  padding-top: 400px;
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 92%;
+  height: 600px;
+}
+
+.can_final_card {
+  border: 3px solid #ffce08;
+  border-radius: 3px;
+}
+
+h2 {
+  position: relative;
+  margin: 30px;
+  text-align: center;
+}
+
+h2:before,
+h2:after {
+  position: absolute;
+  z-index: 0;
+  bottom: -10px;
+  display: block;
+  content: "";
+  border: 1em solid #d90606;
+}
+
+h2:before {
+  left: -30px;
+  border-left-width: 15px;
+  border-left-color: transparent;
+}
+
+h2:after {
+  right: -30px;
+  border-right-width: 15px;
+  border-right-color: transparent;
+}
+
+h2 span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #fa4141;
+}
+
+h2 span:before,
+h2 span:after {
+  position: absolute;
+  bottom: -10px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-style: solid;
+  border-color: #b70505 transparent transparent transparent;
+}
+
+h2 span:before {
+  left: 0;
+  border-width: 10px 0 0 10px;
+}
+
+h2 span:after {
+  right: 0;
+  border-width: 10px 10px 0 0;
+}
+
+.rank_title {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.top_rank_text {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.silver-text {
+  color: transparent;
+  background: repeating-linear-gradient(0deg, #757575 0.1em, #9e9e9e 0.2em, #e8e8e8 0.3em, #9e9e9e 0.4em, #757575 0.5em);
+  -webkit-background-clip: text;
+}
+
+.lose-card {
+  border-radius: 3px;
+  border: 3px #9e9e9e solid;
+}
+
+.lose-rank {
+  background: linear-gradient(45deg, #757575 0%, #9e9e9e 45%, #e8e8e8 70%, #9e9e9e 85%, #757575 90% 100%);
+}
+
+.lose_rank_text {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: blue;
+}
+
+.bg-gold {
+  background: linear-gradient(45deg, #b67b03 0%, #daaf08 45%, #fee9a0 70%, #daaf08 85%, #b67b03 90% 100%);
+}
+
+
