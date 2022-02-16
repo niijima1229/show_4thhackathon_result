@@ -21,7 +21,7 @@
             <div class="inner d-flex flex-column justify-content-between flex-wrap">
                 @foreach ($teams as $team)
                     @if ($loop->index < 2)
-                        <div style="height:40%; width: 55%;" class="mb-5 mr-5">
+                        <div style="height:40%; width: 56%;" class="mb-5 mr-5">
                             <div class="d-flex bg-dark can_final_card justify-content-between">
                                 <p class="d-flex align-items-center h1 p-3 mb-0 bg-gold text-danger top_rank_text">
                                     {{ $loop->iteration }}</p>
